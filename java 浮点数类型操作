@@ -49,8 +49,7 @@
   比较浮点数需考虑一下情形：
   (1) 排除NaN
   (2) 排除+/-Infinity
-  (3) 在精度范围内比较 
-  或者用BigDecimal代替浮点数
+  (3) 在精度范围内比较: 或者用BigDecimal代替浮点数 (Float/Double转BigDecimal时也要排除NaN和+/-Infinity)
  
 3. BigDecimal类型值相等比较
    BigDecimal的大小比较用compareTo()
