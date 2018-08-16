@@ -1,23 +1,62 @@
 一、 java 浮点数类型操作
 1. 奇偶判断：a%2==1表示奇数有问题（负奇数不成立），可以用 a%2 !=0判断和 （a&1）!=0判断，
 
-2. Float类型值相等比较
+2. Float类型值、Double类型值比较
+   2.1 0与-0的比较：使用equals()和compareTo()都不相等
+   Float a = 0f;
+   Float b = -0f;
+   a.equals(b); //false
+   a.compareTo(b); //1
+   
+   Double c = 0.0d;
+   Double d = -0.0d;
+   c.equals(d); //false
+   c.compareTo(d); //1
+   
+   2.2 Float类型
+       Float a = 0f/0;   //NaN
+       Float b = -0f/0;  //NaN
+       
+       Float c = 1f/0;   //Infinity
+       Float d = -1f/0;   //-Infinity
+       
+       Float e = 2f/0;  //-Infinity
+     
+       System.out.println(a.equals(b));   //true NaN与NaN是相等的
+       System.out.println(a.compareTo(b)); //0
+       
+       System.out.println(c.equals(d));   //false  
+       System.out.println(c.equals(e));   //true, 都是Infinity
+
+       
+   2.3 Double类型
+       
+    Double a = Math.sqrt(-1.0);
+    Double b = 0.0d / 0.0d;
+    Double c = a + 200.0d;
+    Double d = b + 1.0d;
+    System.out.println(a.equals(b)); //true
+    System.out.println(b.equals(c)); //true
+    System.out.println(c.equals(d)); //true
+    同样地，compareTo()也无法区分NaN以及0和-0的情形
+    
+    
+  结论：  
+  equals方法是比较2个对象是否等值，而不是对象的值是否相等，所以equals方法设计的初衷根本就不是用来做数值比较的。勿乱用。
+  compareTo虽然说它在设计上是用于数值比较的，但它表现跟equals方法一模一样——对于NaN和0.0与-0.0的比较上面。
+  所以也不能直接用Float/Double的compareTo()方法比较浮点数大小
+  
+  比较浮点数需考虑一下情形：
+  (1) 排除NaN
+  (2) 排除+/-Infinity
+  (3) 在精度范围内比较 
+  或者用BigDecimal代替浮点数
+ 
+3. BigDecimal类型值相等比较
+   BigDecimal的大小比较用compareTo()
 
 
-3. Double类型值相等比较
 
-
-
-4. BigDecimal类型值相等比较
-
-
-
-
-
-
-
-
-
-
-二、参考文献
+二、参考文档
 https://blog.csdn.net/fg2006/article/details/6364556
+https://blog.csdn.net/wcxiaoych/article/details/42806313
