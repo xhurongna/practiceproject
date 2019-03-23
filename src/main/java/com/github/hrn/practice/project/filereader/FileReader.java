@@ -1,4 +1,4 @@
-package com.github.hrn.practice.project.readfile;
+package com.github.hrn.practice.project.filereader;
 
 import java.io.*;
 
@@ -6,7 +6,7 @@ import java.io.*;
  * @author 胡荣娜
  * @date 2019/3/23
  */
-public class ReadFile {
+public class FileReader {
 
     public static void readTxtFile(String filePath) throws IOException {
         String encoding = "UTF-8";

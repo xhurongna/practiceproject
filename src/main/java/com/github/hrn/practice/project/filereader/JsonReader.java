@@ -1,4 +1,4 @@
-package com.github.hrn.practice.project.readfile;
+package com.github.hrn.practice.project.filereader;
 
 import com.alibaba.fastjson.JSONObject;
 
@@ -9,7 +9,7 @@ import java.util.Map;
  * @author 胡荣娜
  * @date 2019/3/23
  */
-public class ReadJson {
+public class JsonReader {
 
     public void getCitys(String filePath) {
         try {
@@ -51,7 +51,7 @@ public class ReadJson {
     }
 
     public static void main(String[] args) {
-        ReadJson readJson = new ReadJson();
-        readJson.getCitys("/Users/hurongna/IdeaProjectsBJ/practiceproject/src/main/resource/city-data.json");
+        JsonReader jsonReader = new JsonReader();
+        jsonReader.getCitys("/Users/hurongna/IdeaProjectsBJ/practiceproject/src/main/resource/city-data.json");
     }
 }
