@@ -1,7 +1,7 @@
 package com.github.hrn.practice.project.eventbusdemo;
 
-import com.google.common.eventbus.EventBus;
-import org.springframework.beans.factory.annotation.Autowired;
+//import com.google.common.eventbus.EventBus;
+//import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -11,6 +11,6 @@ import org.springframework.stereotype.Service;
 @Service
 public class EventBusDemo {
 
-    @Autowired
-    private EventBus eventBus;
+//    @Autowired
+//    private EventBus eventBus;
 }

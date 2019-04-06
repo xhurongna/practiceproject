@@ -16,8 +16,11 @@ public class JsonReader {
             String input = readTxtFile(filePath);
             JSONObject jsonObject = JSONObject.parseObject(input);
             System.out.println("解析json后的文件为");
+
             Map<Integer, JSONObject> map = (Map<Integer, JSONObject>) jsonObject.getJSONObject("data").get("city_list");
-            System.out.println("insert into webCity(cityCode, cityName) values ");
+            System.out.println("解析的城市文件为");
+            System.out.println(jsonObject.getJSONObject("data"));
+            System.out.println("insert into outer_web_city (city_code, name) values ");
             for (Map.Entry<Integer, JSONObject> entry : map.entrySet()) {
                 System.out.println("('" + entry.getKey() + "'" + ", '" + map.get(entry.getKey()).getString("name") + "'),");
             }
@@ -52,6 +55,6 @@ public class JsonReader {
 
     public static void main(String[] args) {
         JsonReader jsonReader = new JsonReader();
-        jsonReader.getCitys("/Users/hurongna/IdeaProjectsBJ/practiceproject/src/main/resource/city-data.json");
+        jsonReader.getCitys("/Users/hurongna/IdeaProjectsBJ/practiceproject/src/main/resource/city-data2.json");
     }
 }
