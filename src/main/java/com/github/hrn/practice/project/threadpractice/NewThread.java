@@ -14,6 +14,8 @@ public class NewThread extends Thread implements Runnable{
     public static void main(String[] args) {
         NewThread newThread = new NewThread();
         newThread.start();
+
+        
     }
 
 }
