@@ -1,14 +1,11 @@
 package com.github.hrn.practice.project;
 
-import com.github.hrn.practice.project.ipquerydemo.IpAddressUtil;
-import com.google.common.eventbus.EventBus;
 import org.springframework.boot.SpringApplication;
+import com.github.hrn.practice.project.config.AppConfig;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import javax.servlet.http.HttpServletRequest;
 
 /**
  * @author 胡荣娜
