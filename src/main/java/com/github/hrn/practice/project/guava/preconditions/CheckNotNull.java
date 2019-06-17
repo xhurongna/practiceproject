@@ -7,12 +7,13 @@ import com.google.common.base.Preconditions;
  * @author 胡荣娜
  * @date 2019-06-17
  */
-public class CheckArgument {
+public class CheckNotNull {
     public static void main(String[] args) {
         User user = new User();
         user.setId(1);
+        String[] accounts = {"账号1", "账号2"};
+        user.setAccounts(accounts);
 
-        Preconditions.checkArgument(user.getId() < 0, "id不能大于0, 传入的参数id为 %s", user.getId());
-
+        Preconditions.checkNotNull(user.getAccounts(), "accounts不能为空，传入的参数accounts为 " + user);
     }
 }

@@ -3,6 +3,9 @@ package com.github.hrn.practice.project.guava.preconditions;
 import com.github.hrn.practice.project.bean.User;
 import com.google.common.base.Preconditions;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @author 胡荣娜
  * @date 2019/3/30
@@ -11,12 +14,31 @@ public class PreconditionsDemo {
 
     public static void main(String[] args) {
         User user = new User();
-        user.setId(1);
+        user.setId(0);
         user.setName("哈哈");
         user.setAge(19);
         String[] accounts = {"账号1", "账号2"};
         user.setAccounts(accounts);
-        checkAllArguments(user);
+//        checkAllArguments(user);
+
+        List<User> userList = new ArrayList<>();
+        userList.add(user);
+
+        User user1 = new User();
+        user1.setId(1);
+        userList.add(user1);
+
+        User user2 = new User();
+        user2.setId(2);
+        userList.add(user2);
+
+        User user3 = new User();
+        user3.setId(3);
+        userList.add(user);
+        System.out.println(userList);
+
+        System.out.println(userList.get(2));
+        System.out.println(userList.subList(0,2));
     }
 
 
