@@ -1,6 +1,6 @@
 package com.github.hrn.practice.project.guava.optional;
 
-import com.google.common.base.MoreObjects;
+import com.github.hrn.practice.project.bean.User;
 import com.google.common.base.Optional;
 
 /**
@@ -15,32 +15,4 @@ public class OptionalOfDemo {
         System.out.println(optionalUser.get());
     }
 
-    public static class User {
-        private int id;
-        private String name;
-
-        public int getId() {
-            return id;
-        }
-
-        public void setId(int id) {
-            this.id = id;
-        }
-
-        public String getName() {
-            return name;
-        }
-
-        public void setName(String name) {
-            this.name = name;
-        }
-
-        @Override
-        public String toString() {
-            return MoreObjects.toStringHelper(this)
-                    .add("id", id)
-                    .add("name", name)
-                    .toString();
-        }
-    }
 }

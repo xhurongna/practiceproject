@@ -1,5 +1,6 @@
 package com.github.hrn.practice.project.guava.optional;
 
+import com.github.hrn.practice.project.bean.User;
 import com.google.common.base.Optional;
 
 /**
@@ -8,7 +9,7 @@ import com.google.common.base.Optional;
  */
 public class OptionalIsPresent {
     public static void main(String[] args) {
-        OptionalOfDemo.User user = new OptionalOfDemo.User();
+        User user = new User();
         Optional optional = Optional.of(user);
         System.out.println(optional.isPresent());
         optional = Optional.fromNullable(null);

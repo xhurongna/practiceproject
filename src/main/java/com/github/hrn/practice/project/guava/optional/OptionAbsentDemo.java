@@ -18,6 +18,5 @@ public class OptionAbsentDemo {
         private Integer age;
         private String address;
 
-
     }
 }

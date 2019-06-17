@@ -1,5 +1,6 @@
 package com.github.hrn.practice.project.guava.optional;
 
+import com.github.hrn.practice.project.bean.User;
 import com.google.common.base.Optional;
 import com.google.common.collect.ImmutableList;
 
@@ -11,15 +12,15 @@ import java.util.List;
  */
 public class OptionalAsSet {
     public static void main(String[] args) {
-        OptionalOfDemo.User user = new OptionalOfDemo.User();
+        User user = new User();
         user.setId(1);
         user.setName("hhh");
 
-        OptionalOfDemo.User user2 = new OptionalOfDemo.User();
+        User user2 = new User();
         user2.setId(2);
         user2.setName("gggg");
 
-        List<OptionalOfDemo.User> userList = ImmutableList.of(user, user2, user);
+        List<User> userList = ImmutableList.of(user, user2, user);
 
 
         Optional optional = Optional.of(userList);
