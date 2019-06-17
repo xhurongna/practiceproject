@@ -10,8 +10,8 @@ import com.google.common.base.Optional;
 public class OptionalOfDemo {
 
     public static void main(String[] args) {
-//        User user = new User();
-        Optional<User> optionalUser = Optional.of(null);
+        User user = new User();
+        Optional<User> optionalUser = Optional.of(user);
         System.out.println(optionalUser.get());
     }
 
