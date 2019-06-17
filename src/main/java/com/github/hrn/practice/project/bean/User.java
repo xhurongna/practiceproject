@@ -7,9 +7,9 @@ import com.google.common.base.MoreObjects;
  * @date 2019-06-17
  */
 public class User {
-    private int id;
+    private Integer id;
     private String name;
-    private int age;
+    private Integer age;
     private String[] accounts;
 
     public int getId() {
@@ -49,6 +49,8 @@ public class User {
         return MoreObjects.toStringHelper(this)
                 .add("id", id)
                 .add("name", name)
+                .add("age", age)
+                .add("accounts", accounts)
                 .toString();
     }
 }
