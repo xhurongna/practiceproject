@@ -1,4 +1,4 @@
-package com.github.hrn.practice.project.guavademo;
+package com.github.hrn.practice.project.guava.preconditions;
 
 import com.google.common.base.Preconditions;
 

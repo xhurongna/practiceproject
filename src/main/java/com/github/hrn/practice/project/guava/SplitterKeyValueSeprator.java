@@ -1,4 +1,4 @@
-package com.github.hrn.practice.project.guavademo;
+package com.github.hrn.practice.project.guava;
 
 import com.google.common.base.Splitter;
 

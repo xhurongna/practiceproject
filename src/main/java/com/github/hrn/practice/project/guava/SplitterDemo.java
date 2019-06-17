@@ -1,8 +1,6 @@
-package com.github.hrn.practice.project.guavademo;
+package com.github.hrn.practice.project.guava;
 
 import com.google.common.base.Splitter;
-
-import java.util.Map;
 
 /**
  * @author 胡荣娜

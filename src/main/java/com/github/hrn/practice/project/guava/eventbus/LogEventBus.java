@@ -1,4 +1,4 @@
-package com.github.hrn.practice.project.eventbusdemo;
+package com.github.hrn.practice.project.guava.eventbus;
 
 import com.google.common.eventbus.Subscribe;
 import lombok.extern.log4j.Log4j2;

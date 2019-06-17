@@ -1,4 +1,4 @@
-package com.github.hrn.practice.project.eventbusdemo;
+package com.github.hrn.practice.project.guava.eventbus;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

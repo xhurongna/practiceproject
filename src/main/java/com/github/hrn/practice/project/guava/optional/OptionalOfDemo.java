@@ -1,4 +1,4 @@
-package com.github.hrn.practice.project.guavademo;
+package com.github.hrn.practice.project.guava.optional;
 
 import com.google.common.base.MoreObjects;
 import com.google.common.base.Optional;

@@ -1,6 +1,6 @@
 package com.github.hrn.practice.project;
 
-import com.github.hrn.practice.project.eventbusdemo.LogEventBus;
+import com.github.hrn.practice.project.guava.eventbus.LogEventBus;
 import com.github.hrn.practice.project.ipquerydemo.IpAddressUtil;
 import com.google.common.eventbus.EventBus;
 import org.springframework.boot.SpringApplication;
