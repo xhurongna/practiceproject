@@ -1,4 +1,4 @@
-package com.github.hrn.practice.project.immutable;
+package com.github.hrn.practice.project.guava.immutable;
 
 import com.google.common.collect.ImmutableList;
 

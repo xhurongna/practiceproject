@@ -1,4 +1,4 @@
-package com.github.hrn.practice.project.guava;
+package com.github.hrn.practice.project.guava.throwables;
 
 import com.google.common.base.Throwables;
 
@@ -22,10 +22,10 @@ public class ThrowablesDemo {
 //            throwRuntimeException();
             throwSQLException();
         } catch (Throwable throwable) {
-//            Throwables.propagateIfInstanceOf(throwable, SQLException.class);
+//            throwables.propagateIfInstanceOf(throwable, SQLException.class);
             //todo 只抛出error和runtimeException,通过实现可以看出
-//            Throwables.propagateIfPossible(throwable);
-//            Throwables.propagate(throwable);
+//            throwables.propagateIfPossible(throwable);
+//            throwables.propagate(throwable);
             System.out.println("root cause " + Throwables.getRootCause(throwable));
             System.out.println("causal chain " +  Throwables.getCausalChain(throwable));
             System.out.println("trace " + Throwables.getStackTraceAsString(throwable));

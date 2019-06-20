@@ -1,4 +1,4 @@
-package com.github.hrn.practice.project.guava;
+package com.github.hrn.practice.project.guava.objects;
 
 import com.google.common.base.MoreObjects;
 
