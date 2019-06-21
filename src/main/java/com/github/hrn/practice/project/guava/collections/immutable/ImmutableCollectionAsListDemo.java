@@ -1,6 +1,7 @@
 package com.github.hrn.practice.project.guava.collections.immutable;
 
 import com.google.common.collect.ImmutableList;
+import com.google.common.collect.ImmutableSortedSet;
 
 /**
  * @author 胡荣娜
@@ -12,5 +13,8 @@ public class ImmutableCollectionAsListDemo {
         String abc = "好哇好哇";
         ImmutableList immutableList = ImmutableList.of(abc).asList();
         System.out.println("immutableList " + immutableList);
+
+        ImmutableSortedSet immutableSortedSet = ImmutableSortedSet.of();
+        immutableSortedSet.asList();
     }
 }

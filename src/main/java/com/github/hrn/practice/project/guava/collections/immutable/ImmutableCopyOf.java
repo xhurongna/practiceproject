@@ -1,6 +1,6 @@
 package com.github.hrn.practice.project.guava.collections.immutable;
 
-import com.google.common.collect.ImmutableSet;
+import com.google.common.collect.ImmutableList;
 
 import java.awt.*;
 import java.util.HashSet;
@@ -20,6 +20,7 @@ public class ImmutableCopyOf {
         colorSet.add(new Color(255, 255, 0));
         colorSet.add(new Color(255, 0, 255));
         colorSet.add(new Color(255, 255, 255));
-        System.out.println(colorSet.equals(ImmutableSet.copyOf(colorSet)));
+        System.out.println(colorSet.equals(ImmutableList.copyOf(colorSet)));
+
     }
 }
