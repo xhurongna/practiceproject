@@ -1,2 +1,4 @@
 config:
   path: https://blog.csdn.net/hurongna/article/details/87629998
+logging:
+  config: classpath:log4j2.xml
