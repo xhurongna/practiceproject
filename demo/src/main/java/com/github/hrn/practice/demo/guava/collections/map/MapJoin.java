@@ -1,6 +1,7 @@
 package com.github.hrn.practice.demo.guava.collections.map;
 
 import com.google.common.base.Joiner;
+import com.google.common.collect.Maps;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -11,6 +12,7 @@ import java.util.Map;
  */
 public class MapJoin {
     public static void main(String[] args) {
+        Maps maps;
         Map<String, String> map = new HashMap<String, String>();
         map.put("a", "b");
         map.put("c", "d");

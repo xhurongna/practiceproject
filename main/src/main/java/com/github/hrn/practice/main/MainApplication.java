@@ -6,11 +6,22 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.scheduling.TaskScheduler;
+import org.springframework.scheduling.annotation.EnableAsync;
+import org.springframework.scheduling.annotation.EnableScheduling;
+import org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import javax.servlet.http.HttpServletRequest;
 
 /**
  * @author 胡荣娜
  * @date 2019/3/18
  */
+@EnableAsync
+@EnableScheduling
+@RestController
 @ComponentScan({"com.github.hrn.practice"})
 @SpringBootApplication
 public class MainApplication {
@@ -25,5 +36,12 @@ public class MainApplication {
         eventBus.register(new LogEventBus());
         return eventBus;
     }
+
+//    @Bean(name = "taskPool")
+//    public TaskScheduler taskScheduler() {
+//        ThreadPoolTaskScheduler threadPoolTaskScheduler = new ThreadPoolTaskScheduler();
+//        threadPoolTaskScheduler.setPoolSize(5);
+//        return threadPoolTaskScheduler;
+//    }
 
 }

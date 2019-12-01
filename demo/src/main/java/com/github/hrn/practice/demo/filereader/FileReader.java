@@ -19,6 +19,7 @@ public class FileReader {
             while ((lineTxt = bufferedReader.readLine()) != null) {
                 stringBuilder.append(lineTxt);
             }
+            bufferedReader.close();
             inputStreamReader.close();
             String buffer = stringBuilder.toString();
             System.out.println(buffer);
