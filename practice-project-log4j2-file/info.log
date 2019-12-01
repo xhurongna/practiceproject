@@ -1,0 +1,24 @@
+17:29:39.081 [main] INFO  com.github.hrn.practice.main.MainApplication - Starting MainApplication on hurongnadeMacBook-Pro.local with PID 6410 (/Users/hurongna/IdeaProjectsBJ/practiceproject/main/target/classes started by hurongna in /Users/hurongna/IdeaProjectsBJ/practiceproject)
+17:29:39.101 [main] INFO  com.github.hrn.practice.main.MainApplication - No active profile set, falling back to default profiles: default
+17:29:39.409 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+17:29:41.746 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+17:29:41.748 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.16
+17:29:41.956 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:29:44.201 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+17:29:44.213 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+17:29:44.229 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+17:29:44.274 [main] INFO  com.github.hrn.practice.main.MainApplication - Started MainApplication in 5.945 seconds (JVM running for 15.346)
+17:38:03.321 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+17:39:14.502 [main] INFO  com.github.hrn.practice.main.MainApplication - Starting MainApplication on hurongnadeMacBook-Pro.local with PID 6686 (/Users/hurongna/IdeaProjectsBJ/practiceproject/main/target/classes started by hurongna in /Users/hurongna/IdeaProjectsBJ/practiceproject)
+17:39:14.522 [main] INFO  com.github.hrn.practice.main.MainApplication - No active profile set, falling back to default profiles: default
+17:39:15.028 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+17:39:19.203 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+17:39:19.206 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.16
+17:39:19.533 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:39:23.411 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+17:39:23.434 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+17:39:23.456 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+17:39:23.532 [main] INFO  com.github.hrn.practice.main.MainApplication - Started MainApplication in 10.669 seconds (JVM running for 26.539)
+17:45:46.431 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+17:45:46.561 [http-nio-8080-exec-1] INFO  com.github.hrn.practice.project.controller.IndexController - 日志
+17:46:21.277 [http-nio-8080-exec-3] INFO  com.github.hrn.practice.project.controller.IndexController - 打印日志成功啦
