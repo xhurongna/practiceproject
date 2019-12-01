@@ -6,3 +6,10 @@ practiceproject.iml
 /.idea/
 /practice-project.iml
 /.gitignore
+!/demo/demo.iml
+demo/target/
+main/target/
+project/target/
+target/
+更换为你的日志路径/
+/demo/demo.iml
