@@ -1,0 +1,11 @@
+13:12:02.070 [main] INFO  com.github.hrn.practice.main.MainApplication - Starting MainApplication on hurongnadeMacPro.local with PID 8953 (/Users/hurongna/IdeaProjectsBJ/practiceproject/main/target/classes started by hurongna in /Users/hurongna/IdeaProjectsBJ/practiceproject)
+13:12:02.082 [main] INFO  com.github.hrn.practice.main.MainApplication - No active profile set, falling back to default profiles: default
+13:12:04.000 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+13:12:04.154 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+13:12:04.155 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+13:12:04.172 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/hurongna/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+13:12:04.344 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+13:12:05.121 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+13:12:05.159 [main] INFO  com.github.hrn.practice.main.MainApplication - Started MainApplication in 3.967 seconds (JVM running for 11.012)
+13:12:32.718 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+13:12:35.779 [http-nio-8080-exec-3] INFO  com.github.hrn.practice.project.controller.IndexController - 打印日志成功啦
