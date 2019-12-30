@@ -22,3 +22,13 @@
 17:45:46.431 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
 17:45:46.561 [http-nio-8080-exec-1] INFO  com.github.hrn.practice.project.controller.IndexController - 日志
 17:46:21.277 [http-nio-8080-exec-3] INFO  com.github.hrn.practice.project.controller.IndexController - 打印日志成功啦
+10:23:01.998 [main] INFO  com.github.hrn.practice.main.MainApplication - Starting MainApplication on hurongnadeMacPro.local with PID 2849 (/Users/hurongna/IdeaProjectsBJ/practiceproject/main/target/classes started by hurongna in /Users/hurongna/IdeaProjectsBJ/practiceproject)
+10:23:02.009 [main] INFO  com.github.hrn.practice.main.MainApplication - No active profile set, falling back to default profiles: default
+10:23:03.977 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+10:23:03.986 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+10:23:03.987 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+10:23:04.004 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/hurongna/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+10:23:04.169 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:23:04.898 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+10:23:04.936 [main] INFO  com.github.hrn.practice.main.MainApplication - Started MainApplication in 3.893 seconds (JVM running for 10.016)
+10:55:20.859 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
