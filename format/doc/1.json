@@ -1,0 +1,55 @@
+{
+  "filters": {
+    "and": [
+      {
+        "or": [
+          {
+            "action": "match",
+            "field": "channelId",
+            "value": 4001
+          }
+        ]
+      },
+      {
+        "or": [
+          {
+            "action": "match",
+            "field": "cityCodeList",
+            "value": "210100"
+          }
+        ]
+      },
+      {
+        "or": [
+          {
+            "action": "match",
+            "field": "relationType",
+            "value": "article"
+          }
+        ]
+      }
+    ]
+  },
+  "fls": [
+    "relationType",
+    "templateType",
+    "playCount",
+    "releaseTime",
+    "author",
+    "link",
+    "encryptRelationId",
+    "labelNameList",
+    "iconUrl",
+    "title",
+    "readCount"
+  ],
+  "getRelativeScore": false,
+  "page": 0,
+  "size": 3,
+  "sorts": [
+    {
+      "field": "releaseTime",
+      "order": "desc"
+    }
+  ]
+}

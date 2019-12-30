@@ -12,6 +12,7 @@
         <module>project</module>
         <module>demo</module>
         <module>main</module>
+        <module>format</module>
     </modules>
     <name>practice-project</name>
 

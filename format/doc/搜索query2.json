@@ -1,0 +1,37 @@
+{
+  "filters": {
+    "and": [
+      {
+        "or": [
+          {
+            "action": "match",
+            "field": "relationId",
+            "value": 74
+          }
+        ]
+      },
+      {
+        "or": [
+          {
+            "action": "match",
+            "field": "relationType",
+            "value": "data_query"
+          }
+        ]
+      }
+    ]
+  },
+  "fls": [
+    "indexId"
+  ],
+  "getRelativeScore": false,
+  "page": 3,
+  "route": "74",
+  "size": 300,
+  "sorts": [
+    {
+      "field": "indexId",
+      "order": "asc"
+    }
+  ]
+}

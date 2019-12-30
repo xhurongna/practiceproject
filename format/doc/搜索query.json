@@ -1,0 +1,64 @@
+{
+  "filters": {
+    "and": [
+      {
+        "or": [
+          {
+            "action": "match",
+            "field": "cityCodeList",
+            "value": "310000"
+          }
+        ]
+      },
+      {
+        "or": [
+          {
+            "action": "match",
+            "field": "relationType",
+            "value": "article"
+          }
+        ]
+      },
+      {
+        "or": [
+          {
+            "action": "not",
+            "field": "relationId",
+            "value": "202137"
+          }
+        ]
+      }
+    ]
+  },
+  "fls": [
+    "relationType",
+    "releaseTime",
+    "author",
+    "link",
+    "encryptRelationId",
+    "relationId",
+    "labelNameList",
+    "channelName",
+    "title",
+    "readCount"
+  ],
+  "getRelativeScore": true,
+  "page": 0,
+  "qfs": [
+    "channelName",
+    "labelNameList"
+  ],
+  "query": "通知/公告 购房资质 ",
+  "queryMinimumShouldMatch": "1",
+  "size": 2,
+  "sorts": [
+    {
+      "field": "_score",
+      "order": "desc"
+    },
+    {
+      "field": "releaseTime",
+      "order": "desc"
+    }
+  ]
+}
