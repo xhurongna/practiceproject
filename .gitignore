@@ -67,3 +67,6 @@ project/src/test/
 project/target/
 target/
 /.idea/
+/main/main.iml
+/project/project.iml
+/demo/demo.iml
