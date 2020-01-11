@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
  * @author 胡荣娜
  * @date 2019-12-29
  */
-public class Stream {
+public class StreamDemo {
 
     public static void main(String[] args) {
         List<Integer> list = Lists.newArrayList();
